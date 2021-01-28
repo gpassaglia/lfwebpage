@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{% block title %} Update Cost Data {% endblock %}</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label for="brown_sugar_g">Brown Sugar(g)</label>
+        <input type="text" name="Brown Sugar(g)"
+               placeholder="Brown Sugar(g)" class="form-control"
+               value="{{ request.form['brown_sugar_g'] }}"></input>
+    </div>
+
+    <div class="form-group">
+        <label for="white_sugar_g">White Sugar(g)</label>
+        <input type="text" name="White Sugar(g)"
+               placeholder="White Sugar(g)" class="form-control"
+               value="{{ request.form['white_sugar_g'] }}"></input>
+    </div>
+
+    <div class="form-group">
+        <label for="candy_sugar_g">Candy Sugar (g)</label>
+        <input type="text" name="Candy Sugar (g)"
+               placeholder="Candy Sugar (g)" class="form-control"
+               value="{{ request.form['candy_sugar_g'] }}"></input>
+    </div>
+
+    <div class="form-group">
+        <label for="cane_g">Cane (g)</label>
+        <input type="text" name="Cane (g)"
+               placeholder="Cane (g)" class="form-control"
+               value="{{ request.form['cane_g'] }}"></input>
+    </div>
+
+
+    <div class="form-group">
+        <label for="caster_g">Caster (g)</label>
+        <input type="text" name="Caster (g)"
+               placeholder="Caster (g)" class="form-control"
+               value="{{ request.form['caster_g'] }}"></input>
+    </div>
+
+
+    <div class="form-group">
+        <label for="demerara_g">Demerara (g)</label>
+        <input type="text" name="Demerara (g)"
+               placeholder="Demerara (g)" class="form-control"
+               value="{{ request.form['demerara_g'] }}"></input>
+    </div>
+
+    <div class="form-group">
+        <label for="granulated_g">Granulated (g)</label>
+        <input type="text" name="Granulated (g)"
+               placeholder="Granulated (g)" class="form-control"
+               value="{{ request.form['granulated_g'] }}"></input>
+    </div>
+
+    <div class="form-group">
+        <label for="icing_sugar_g">Icing Sugar (g)</label>
+        <input type="text" name="Icing Sugar (g)"
+               placeholder="Icing Sugar (g)" class="form-control"
+               value="{{ request.form['icing_sugar_g'] }}"></input>
+    </div>
+
+    <div class="form-group">
+        <label for="inverted_g">Inverted (g)</label>
+        <input type="text" name="Inverted (g)"
+               placeholder="Inverted (g)" class="form-control"
+               value="{{ request.form['inverted_g'] }}"></input>
+    </div>
+
+    <div class="form-group">
+        <label for="labor_cost">Labor cost (£/h)</label>
+        <input type="text" name="Labor cost (£/h)"
+               placeholder="Labor cost (£/h)" class="form-control"
+               value="{{ request.form['labor_cost'] }}"></input>
+    </div>
+
+        <div class="form-group">
+        <label for="lemon_juice">Lemon Juice (ml)</label>
+        <input type="text" name="Lemon Juice (ml)"
+               placeholder="Lemon Juice (ml)" class="form-control"
+               value="{{ request.form['lemon_juice'] }}"></input>
+    </div>
+
+        <div class="form-group">
+        <label for="lemonade_cost">Lemonade Cost (£/l)</label>
+        <input type="text" name="Lemonade Cost (£/l)"
+               placeholder="Lemonade Cost (£/l)" class="form-control"
+               value="{{ request.form['lemonade_cost'] }}"></input>
+    </div>
+
+        <div class="form-group">
+        <label for="lime_juice">Lime Juice (ml)</label>
+        <input type="text" name="Lime Juice (ml)"
+               placeholder="Lime Juice (ml)" class="form-control"
+               value="{{ request.form['lime_juice'] }}"></input>
+    </div>
+
+        <div class="form-group">
+        <label for="number_laborers">Number of laborers</label>
+        <input type="text" name="Number of laborers"
+               placeholder="Number of laborers" class="form-control"
+               value="{{ request.form['number_laborers'] }}"></input>
+    </div>
+
+        <div class="form-group">
+        <label for="orange_juice">Orange Juice (ml)</label>
+        <input type="text" name="Orange Juice (ml)"
+               placeholder="Orange Juice (ml)" class="form-control"
+               value="{{ request.form['orange_juice'] }}"></input>
+    </div>
+
+        <div class="form-group">
+        <label for="pre_heater_wattage">Pre Heater Wattage (kW)</label>
+        <input type="text" name="Pre Heater Wattage (kW)"
+               placeholder="Pre Heater Wattage (kW)" class="form-control"
+               value="{{ request.form['pre_heater_wattage'] }}"></input>
+    </div>
+
+        <div class="form-group">
+        <label for="reactor_energy_wattage">Reactor Energy Wattage (kW)</label>
+        <input type="text" name="Reactor Energy Wattage (kW)"
+               placeholder="Reactor Energy Wattage (kW)" class="form-control"
+               value="{{ request.form['reactor_energy_wattage'] }}"></input>
+    </div>
+
+        <div class="form-group">
+        <label for="system_cost">System Cost (£)</label>
+        <input type="text" name="System Cost (£)"
+               placeholder="System Cost (£)" class="form-control"
+               value="{{ request.form['system_cost'] }}"></input>
+    </div>
+
+        <div class="form-group">
+        <label for="system_lifetime">System Lifetime (h)</label>
+        <input type="text" name="System Lifetime (h)"
+               placeholder="System Lifetime (h)" class="form-control"
+               value="{{ request.form['system_lifetime'] }}"></input>
+    </div>
+
+        <div class="form-group">
+        <label for="volume_lemonade">Volume of lemonade produced (l)</label>
+        <input type="text" name="Volume of lemonade produced (l)"
+               placeholder="Volume of lemonade produced (l)" class="form-control"
+               value="{{ request.form['volume_lemonade'] }}"></input>
+    </div>
+
+        <div class="form-group">
+        <label for="£/kWh">£/kWh</label>
+        <input type="text" name="£/kWh"
+               placeholder="£/kWh" class="form-control"
+               value="{{ request.form['£/kWh'] }}"></input>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+{% endblock %}

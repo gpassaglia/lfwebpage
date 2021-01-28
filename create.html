@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{% block title %} New Batch Entry {% endblock %}</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label for="product_type">Product Type</label>
+        <input type="text" name="Product Type"
+               placeholder="Product Type" class="form-control"
+               value="{{ request.form['product type'] }}"></input>
+    </div>
+
+    <div class="form-group">
+        <label for="white_sugar">White Sugar</label>
+        <input type="number" name="White Sugar"
+               placeholder="White Sugar" class="form-control"
+               value="{{ request.form['white sugar'] }}"></input>
+    </div>
+
+    <div class="form-group">
+        <label for="brown_sugar">Brown Sugar</label>
+        <input type="number" name="Brown Sugar"
+               placeholder="Brown Sugar" class="form-control"
+               value="{{ request.form['brown sugar'] }}"></input>
+    </div>
+
+    <div class="form-group">
+        <label for="lemons">Lemons</label>
+        <input type="number" name="Lemons"
+               placeholder="Lemons" class="form-control"
+               value="{{ request.form['lemons'] }}"></input>
+    </div>
+
+
+
+    <div class="form-group">
+        <label for="limes">Limes</label>
+        <input type="number" name="Limes"
+               placeholder="Limes" class="form-control"
+               value="{{ request.form['limes'] }}"></input>
+    </div>
+
+
+
+    <div class="form-group">
+        <label for="oranges">Oranges</label>
+        <input type="number" name="Oranges"
+               placeholder="Oranges" class="form-control"
+               value="{{ request.form['oranges'] }}"></input>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+{% endblock %}
